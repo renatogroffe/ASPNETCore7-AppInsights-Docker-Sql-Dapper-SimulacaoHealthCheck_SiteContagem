@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem-vindo(a)!!!</h1>
+    <p><b>Contador - Valor atual:</b> @TempData["Contador"]</p>
+    <p><b>Local (Máquina | Container | Pod):</b> @TempData["Local"]</p>
+    <p><b>Node - Kubernetes:</b> @TempData["NodeK8s"]</p>
+    <p><b>Namespace - Kubernetes:</b> @TempData["NamespaceK8s"]</p>
+    <p><b>Kernel:</b> @TempData["Kernel"]</p>
+    <p><b>Target Framework:</b> @TempData["Framework"]</p>
+    <p><b>Mensagem:</b> @TempData["MensagemVariavel"]</p>
+</div>
